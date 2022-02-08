@@ -1,9 +1,9 @@
-key='e36bb985-e2f1-43fd-b85e-e4569be5d05b'
-app_name="accgen123"
-deviceid="17A7F633BD2668F5C58AC8FF2E0DDB52FE738274220CF20A44FBD5C421B24F47D483B642ED67AE381E"
-emaill="e8bf0gjt9@xojxe.com"
-passwordd="tempmail"
-custompwd="fakeaccpwd"
+key='7930cf2a-da80-4fe7-b182-b36e46485a96'
+app_name="accgenpudim"
+deviceid="32A50B07C864071E12ECF1F5206021D1788A041B072BF4C3BB20A87B2668934FC6D640B2C62D6DAE68"
+emaill="uchiha.itachi.vhs@gmail.com"
+passwordd="2293201518"
+custompwd="pudimgostoso36"
 url="https://ElatedSlipperyArchive.crimsondead.repl.co"
-chatlink="http://aminoapps.com/p/x8nptuj"
+chatlink="http://aminoapps.com/p/oa3chq"
 nickname="itsme"
