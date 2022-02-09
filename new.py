@@ -4,6 +4,6 @@ deviceid="32A50B07C864071E12ECF1F5206021D1788A041B072BF4C3BB20A87B2668934FC6D640
 emaill="uchiha.itachi.vhs@gmail.com"
 passwordd="2293201518"
 custompwd="pudimgostoso36"
-url="https://ElatedSlipperyArchive.crimsondead.repl.co"
+url="https://EvergreenExtraneousRedundancy.puddimg.repl.co"
 chatlink="http://aminoapps.com/p/oa3chq"
 nickname="itsme"
