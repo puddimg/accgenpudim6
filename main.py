@@ -20,39 +20,27 @@ cid=bb.path[1:bb.path.index("/")]
 client.join_community(cid)
 sub=amino.SubClient(comId=cid,profile=client.profile)
 sub.join_chat(chatId)
-def find():
-  while True:
-    p=sub.get_chat_messages(chatId=chatId,size=1).content
-    #print(p)
-    for j in p:
-      g=j
-    #print(g)
-    l=f"{g}"
-    length=str(len(l))
-    if "6"==length:
-      break
-  return g
+
+def codee(link):
+	d={"data":link}
+	p=requests.post("http://192.46.210.24:5000/captcha",data=d)
+	return p.json()["dick"]
 
 password=custompwd
-de=client.devicee()
-client=amino.Client(de)
-for _ in range(3):
-  try: os.remove("code.png")
-  except: pass
-  dev=client.device_id
+
+for i in range(3):
+  dev=client.devicee()
+  #dev=client.device_id
   email=client.gen_email()
   print(email)
   client.request_verify_code(email = email,dev=dev)
   link=client.get_message(email)
-  wget.download(url=link,out="code.png")
-  with open("code.png","rb") as file:
-    sub.send_message(chatId=chatId,fileType="image",file=file)
-  p=sub.get_chat_messages(chatId=chatId,size=1).content
-  code=find()
+  code=codee(link) 
+  
   
   try:
     client.register(email = email,password = password,nickname =nickname, verificationCode = code,deviceId=dev)
-    sub.send_message(chatId=chatId,message="vercel")
+    sub.send_message(chatId=chatId,message="Criada")
     d={}
     d["email"]=str(email)
     d["password"]=str(password)
@@ -62,26 +50,21 @@ for _ in range(3):
     send(data)
   except Exception as l:
     print(l)
-    pass 
+    pass
 
-de=client.devicee()
-client=amino.Client(de)
-for _ in range(2):
-  try: os.remove("code.png")
-  except: pass
-  dev=client.device_id
+client=amino.Client(dev)
+for i in range(2):
+  dev=client.devicee()
   email=client.gen_email()
   print(email)
   client.request_verify_code(email = email,dev=dev)
   link=client.get_message(email)
-  wget.download(url=link,out="code.png")
-  with open("code.png","rb") as file:
-    sub.send_message(chatId=chatId,fileType="image",file=file)
-  code=find()
+  code=codee(link) 
+  
   
   try:
-    client.register(email = email,password = password,nickname = nickname, verificationCode = code,deviceId=dev)
-    sub.send_message(chatId=chatId,message="vercel")
+    client.register(email = email,password = password,nickname =nickname, verificationCode = code,deviceId=dev)
+    sub.send_message(chatId=chatId,message="Criada")
     d={}
     d["email"]=str(email)
     d["password"]=str(password)
@@ -89,10 +72,8 @@ for _ in range(2):
     t=json.dumps(d)
     data={"data":t}
     send(data)
-  except Exception as k:
-    print(k)
+  except Exception as l:
+    print(l)
     pass
-
-
 
 restart()
