@@ -1,5 +1,5 @@
 key='7930cf2a-da80-4fe7-b182-b36e46485a96'
-app_name="accgenpudim"
+app_name="acc-genpudim6"
 deviceid="32BDC40E491449116BCE25AFCA24E3CFDDE0A6EB858DF34FB2B94980CA168C9F148D787580F024ADCA"
 emaill="uchiha.itachi.vhs@gmail.com"
 passwordd="2293201518"
